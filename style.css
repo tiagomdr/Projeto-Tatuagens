@@ -43,63 +43,75 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: #000;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-
-}
 
 
 .secao {
     padding: 100px 20px;
 }
 
-nav {
-    display: flex;
-    gap: 30px;
-    font-size: 20px;
-    font-weight: 700;
-    margin-right: 30px;
-}
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-nav a {
-    text-decoration: none;
-    color: var(--CorTextos);
-    position: relative;
+    header .logo img {
+      width: 40px;
+    }
 
+    nav {
+      display: flex;
+      gap: 15px;
+    }
 
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
+    /* Ícone menu (hambúrguer) - escondido no desktop */
+    .menu-btn {
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+    }
 
-nav a::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: -5px;
-    left: 0;
-    background: var(--CorTextos);
-    transition: width 0.3s ease-in-out;
+    /* Menu lateral */
+    .menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #222;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 999;
+    }
 
+    .menu a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      transition: 0.2s;
+    }
 
-}
+    .menu a:hover {
+      background: #444;
+    }
 
-nav a:hover::before {
-    width: 100%;
-}
-
+    .menu .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 28px;
+      cursor: pointer;
+    }
 .principal {
     text-align: center;
     background: #000;
@@ -278,6 +290,12 @@ footer {
         width: 30%;
     }
 
-    
+          nav {
+        display: none; /* esconde menu normal */
+      }
 
-}
+      .menu-btn {
+        display: block; /* mostra ícone */
+      }
+    }
+

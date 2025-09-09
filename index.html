@@ -8,18 +8,25 @@
     <title>Tatuagem</title>
 </head>
 <body>
-        <header>
-             <div class="logo"><img class="logotipo" src="imagens/favicon.png" alt="Logo"></div>
-             <button type="button" class="abrirMenu">📅</button>
-             <nav>
-                <ul>
-                <li><a href="#">Home</a></li>
-                 <li><a href="#sobre">Sobre</a></li>
-                 <li><a href="#galeria">Galeria</a></li>
-                 <li><a href="#agendar">Agendar</a></li>
-                </ul>
-             </nav>
-        </header>
+<header>
+    <div class="logo"><img src="imagens/favicon.png" alt="Logo"></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#agendar">Agendar</a>
+    </nav>
+    <span class="menu-btn" onclick="abrirMenu()">☰</span>
+  </header>
+
+  <!-- Menu lateral -->
+  <div id="menuLateral" class="menu">
+    <span class="close-btn" onclick="fecharMenu()">&times;</span>
+    <a href="#">Home</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#agendar">Agendar</a>
+  </div>
 
         <section class="principal secao">
                 <h1>Arte na pele com Propósito</h1>
@@ -35,15 +42,15 @@
         <section class="galeria secao" id="galeria">
             <h2 class="titulo-secao">Galeria</h2>
             <div class="card-imgs">
-                <div class="caixa-img"><img src="imagens/01.jpg" class="galeria-img"></div>
-                <div class="caixa-img"><img src="imagens/02.jpg" class="galeria-img"></div>
-                <div class="caixa-img"><img src="imagens/03.jpg" class="galeria-img"></div>
-                <div class="caixa-img"><img src="imagens/04.jpg" class="galeria-img"></div>
-                <div class="caixa-img"><img src="imagens/05.jpg" class="galeria-img"></div>
-                <div class="caixa-img"><img src="imagens/06.jpg" class="galeria-img"></div>
-                <div class="caixa-img"><img src="imagens/07.jpg" class="galeria-img"></div>
-                <div class="caixa-img"><img src="imagens/08.jpg" class="galeria-img"></div>
-                 <div class="caixa-img"><img src="imagens/09.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="https://i.postimg.cc/6pFB4gRH/01.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="https://i.postimg.cc/kGMCdm35/02.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="https://i.postimg.cc/d0dw26jJ/03.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="https://i.postimg.cc/85SDtvZM/04.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="https://i.postimg.cc/NMktV0nV/05.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="https://i.postimg.cc/GtMCL5dx/06.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="https://i.postimg.cc/3x0Th162/07.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="https://i.postimg.cc/VvkxVWnr/08.jpg" class="galeria-img"></div>
+                 <div class="caixa-img"><img src="https://i.postimg.cc/3JcTzVLK/09.jpg" class="galeria-img"></div>
             </div>
 
         </section>
