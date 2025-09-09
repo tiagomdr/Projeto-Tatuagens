@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tatuagem</title>
+</head>
+<body>
+        <header>
+             <div class="logo"><img class="logotipo" src="imagens/favicon.png" alt="Logo"></div>
+             <button type="button" class="abrirMenu">📅</button>
+             <nav>
+                <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#sobre">Sobre</a></li>
+                 <li><a href="#galeria">Galeria</a></li>
+                 <li><a href="#agendar">Agendar</a></li>
+                </ul>
+             </nav>
+        </header>
+
+        <section class="principal secao">
+                <h1>Arte na pele com Propósito</h1>
+                <p>Seu estilo, nossa arte. Agende agora sua tatuagem!</p>
+                <a href="#agendar" class="link-agendar">Agendar Tatuagem</a>
+        </section>
+
+        <section class="sobre secao" id="sobre">
+                <h2 class="titulo-secao">Sobre Nós</h2>
+                <p>Somos uma equipe de tatuadores apaixonados por transformar ideias em arte na pele. Com anos de experiência, oferecemos designs personalizados e um ambiente seguro e acolhedor para nossos clientes.</p>
+        </section>
+
+        <section class="galeria secao" id="galeria">
+            <h2 class="titulo-secao">Galeria</h2>
+            <div class="card-imgs">
+                <div class="caixa-img"><img src="imagens/01.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="imagens/02.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="imagens/03.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="imagens/04.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="imagens/05.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="imagens/06.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="imagens/07.jpg" class="galeria-img"></div>
+                <div class="caixa-img"><img src="imagens/08.jpg" class="galeria-img"></div>
+                 <div class="caixa-img"><img src="imagens/09.jpg" class="galeria-img"></div>
+            </div>
+
+        </section>
+
+        <section class="agendamento secao" id="agendar">
+            
+                <h2 class="titulo-secao">Agendamento</h2>
+                <form class="form-agendamento">
+                    <label for="nome">
+                        <input required type="text" name="nome" placeholder="Seu Nome" id="nome">
+                    </label>
+                         <label for="tel">
+                        <input required type="tel" name="tel" placeholder="Seu Telefone" id="tel">
+                    </label>
+                    <label for="data">
+                        <input required  type="date" name="data" id="data">
+                    </label>
+                    <label for="hora">
+                        <input required type="time" name="hora" id="hora">
+                    </label>
+                    <select required id="select">
+                        <option selected disabled>Estilo da tatuagem</option>
+                        <option value="BlackWord" >BlackWord</option>
+                        <option value="Fineline" >Fineline</option>
+                        <option value="Realismo" >Realismo</option>
+                        <option value="Outros" >Outros</option>
+                    </select>
+                    <button type="submit" class="enviar">Agendar Via WhatsApp</button>
+                </form>
+                <a href="#" class="whatsapp"><img class="logo-whatsapp" src="imagens/whatsapp.png" alt="logo-whatsapp"></a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Desenvolvido Por Tiago Medeiros</p>
+        </footer>
+</body>
+    <script src="script.js"></script>
+</html>
